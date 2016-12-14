@@ -13,10 +13,10 @@ To use this buildpack, you should prepare .buildpacks file that contains this bu
     ...
     
     $ cat .buildpacks
-    https://github.com/Litterfeldt/heroku-buildpack-ffmpeg-x264-fdk_aac
-    https://github.com/heroku/heroku-buildpack-play
+    https://github.com/heroku/heroku-buildpack-nodejs#v83
+    https://github.com/rhinobuccaneers/heroku-buildpack-ffmpeg
 
-    $ heroku create --buildpack https://github.com/ddollar/heroku-buildpack-multi
+    $ heroku create --buildpack https://github.com/rhinobuccaneers/heroku-buildpack-multi
 
     $ git push heroku master
     ...
@@ -45,5 +45,3 @@ This buildpack comes with ffmpeg configured like so:
 It also contains all prebuilt dependencies needed to run ffmpeg with x264 and fdk_acc.
 
 Nothing else is needed.
-
-https://github.com/shunjikonishi/heroku-buildpack-ffmpeg/blob/master/bin/compile#L10
